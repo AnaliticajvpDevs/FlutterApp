@@ -10,7 +10,7 @@ class Page2 extends StatelessWidget {
         backgroundColor: Colors.blueGrey,
         title: const Text(
           "Page 2",
-          style: TextStyle(fontFamily: 'Over There'),
+          style: TextStyle(fontFamily: 'TESLA'),
         ),
       ),
       body: Row(          

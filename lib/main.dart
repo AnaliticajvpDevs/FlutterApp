@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'page2.dart';
 
 String url =
-    'https://blogger.googleusercontent.com/img/a/AVvXsEgaRDmsP9k33RIP5abv2rb6WpzGCJr86bkNfLrUQHA4bgprRcsMPPuy7IN-2PYHWLuvZSrIQchzOUXlYQsRPFqmkG8zT-IbMN3KYoYQVTUV2JD0H_Cp5zA10-I0jMb3K22pUlfYR0o2kosJ_7tJjyX0m4HLDi-Cb8KluQ3xMzqv5paxCu7NsYmhCs9r=w640-h486';
-
+    'https://as01.epimg.net/meristation/imagenes/2022/03/10/noticias/1646940257_023804_1646940320_sumario_normal.jpg';
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -43,7 +42,7 @@ class ScaffoldWidget extends StatelessWidget {
           backgroundColor: Colors.blueGrey,
           title: const Text(
             "Moonknight",
-            style: TextStyle(fontFamily: 'Over There'),
+            style: TextStyle(fontFamily: 'Arial'),
           )),
       body: Container(
         decoration: BoxDecoration(
@@ -59,18 +58,21 @@ class ScaffoldWidget extends StatelessWidget {
             height: 30,
           ),
           Center(child: Title()),
-          const SizedBox(height: 130),
+          const SizedBox(height: 100),
           User(),
           Pass(),
           BotonEnt(),
           const SizedBox(height: 30),
           FlatButton(
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 50),
-            color: Colors.black54,
-              child: const Text('navigate', style: TextStyle(color: Colors.white, fontSize: 15),),
+              padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 50),
+              color: Colors.black54,
+              child: const Text(
+                'navigate',
+                style: TextStyle(color: Colors.white, fontSize: 15),
+              ),
               onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => const Page2()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const Page2()));
               })
         ]),
       ),
@@ -87,7 +89,7 @@ Widget Title() {
         style: TextStyle(
             color: Colors.black54,
             fontFamily: 'Over There',
-            fontSize: 15,
+            fontSize: 25,
             fontWeight: FontWeight.bold),
       ));
 }
